@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Timer</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      .clock {
+        font-family: "Tomorrow", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col"><h1>Timer</h1></div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <input
+            class="form-control form-control-lg"
+            type="text"
+            placeholder="Time in seconds"
+          />
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col d-flex justify-content-center">
+          <button
+            id="start-button"
+            type="button"
+            class="btn btn-primary btn-lg"
+          >
+            START
+          </button>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col d-flex justify-content-center align-items-center">
+          <button id="minus-button" type="button" class="btn btn-danger btn-lg">
+            -
+          </button>
+        </div>
+        <div class="col">
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 id="clock" class="display-4 clock">00:00:00</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <button id="plus-button" type="button" class="btn btn-success btn-lg">
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
